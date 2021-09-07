@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ucudal/PW_2021_Website-rafapelacchi#readme",
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
     "tailwindcss": "^2.2.7"
   }
 }
