@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="myStyles.css">
+    <title>Rafael Pelacchi</title> 
+</head>
+<body> 
+
+    <div>
+
+        <!-- Menu Mobile -->
+        <div class="bg-gray-800  text-gray-100 flex justify-between md:hidden">
+            <div class="flex p-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg> 
+                <label class="font-extrabold">Rafael Pelacchi</label>
+            </div> 
+
+            <button href="#" class="flex p-4 text-white font-bold focus:bg-gray-700" onclick="mostrarMenuMobile()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+
+        <!-- Menu Browser -->
+        <div id="navBar" class="bg-gray-800 flex text-white items-center justify-between p-3 fixed inset-y-0 left-0 transform -translate-x-full transition duration-300 ease-in-out md:relative md:-translate-x-0">
+            <label class="font-extrabold pl-11">Rafael Pelacchi</label>
+            <ul class="flex justify-between">
+                <li class="p-3"><a class="" href="#"></a>Presentacion</li>
+                <li class="p-3"><a class="" href="#"></a>Experiencia Laboral</li>
+                <li class="p-3"><a class="" href="#"></a>Skills</li>
+                <li class="p-3"><a class="" href="#"></a>Educacion</li>
+            </ul>
+        </div>
+
+        <!-- Menu Presentacion -->
+        <section class="w-full p-0 h-screen text-white items-center justify-between" id="presentacion"> 
+            <div  class="font-mono">Hola, mi nombre es</div>
+            <div class="font-mono">Rafael Pelacchi</div>
+            <div class="font-mono">Este es mi trabajo practico de Programacion Web</div> 
+        </section>
+
+        <!-- Menu Experiencia Laboral -->
+        <section class="w-full p-0" id="experiencia"></section>
+
+        <!-- Menu Skills -->
+        <section class="w-full p-0" id="skills"></section>
+
+        <!-- Menu Educacion -->
+        <section class="w-full p-0" id="educacion"></section>
+
+    </div>
+</body>
+</html>
+
+<script type="text/javascript" src="index.js"></script>
