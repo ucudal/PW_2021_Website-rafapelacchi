@@ -30,13 +30,13 @@
 
 
         <!-- Menu Browser -->
-        <div id="navBar" class="fixed bg-gray-800 flex text-white items-center justify-between p-3 inset-y-0 left-0 transform -translate-x-full transition duration-300 ease-in-out md:relative md:-translate-x-0">
+        <div id="navBar" class="bg-gray-800 flex text-white items-center justify-between p-3 fixed w-full">
             <label class="font-extrabold pl-11">Rafael Pelacchi</label>
             <ul class="flex justify-between">
-                <li class="p-3"><a class="" href="#"></a>Presentacion</li>
-                <li class="p-3"><a class="" href="#"></a>Experiencia Laboral</li>
-                <li class="p-3"><a class="" href="#"></a>Skills</li>
-                <li class="p-3"><a class="" href="#"></a>Educacion</li>
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('presentacion')"><a class="" href="#" ></a>Presentacion</li>
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 "><a class="" href="#"></a>Experiencia Laboral</li>
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('skills')">Skills</li>
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 "><a class="" href="#"></a>Educacion</li>
             </ul>
         </div>
 
@@ -59,7 +59,81 @@
         <section class="w-full p-0" id="experiencia"></section>
 
         <!-- Menu Skills -->
-        <section class="w-full p-0" id="skills"></section>
+        <section class="w-full p-0" id="skills">
+            <div class="p-16">
+
+                <div class="grid grid-cols-5">
+                    <div class="bg-gray-800 h-3 w-full mt-2 col-span-2 rounded-lg"></div>
+                    <div class="font-mono text-center text-3xl">
+                        Skills
+                    </div>
+                    <div class="bg-gray-800 h-3 w-full mt-2 col-span-2 rounded-lg"></div>
+                </div>
+                <div class="pt-6">
+                    <p class="font-mono">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur siLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur si, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur si
+                    </p>
+                </div>
+                <div>
+                    <div class="pt-9">
+                        <div>
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>C#</span>
+                                <span>%90</span>
+                            </div>
+                            <div>
+                                <div class="skill csharp"></div> 
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>SQL Server</span>
+                                <span>%85</span>
+                            </div>
+                            <div>
+                                <div class="skill sql"></div> 
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>Java</span>
+                                <span>%80</span>
+                            </div>
+                            <div>
+                                <div class="skill java"></div> 
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>JavaScript</span>
+                                <span>%70</span>
+                            </div>
+                            <div>
+                                <div class="skill js"></div> 
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>Angular</span>
+                                <span>%60</span>
+                            </div>
+                            <div>
+                                <div class="skill angular"></div> 
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>CSS</span>
+                                <span>%50</span>
+                            </div>
+                            <div>
+                                <div class="skill css"></div> 
+                            </div>
+                        </div>
+                    </div> 
+                  </div>
+            </div>
+        </section>
 
         <!-- Menu Educacion -->
         <section class="w-full p-0" id="educacion"></section>

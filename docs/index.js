@@ -10,3 +10,29 @@ function move() {
       document.getElementById("mensajeAprobacion").textContent = "Aprobado"; 
       document.getElementById("bordepweb").className = "p-4 bg-white border-l-8 border-green-400 rounded-md shadow-md m-5 ml-0";
   }
+
+
+function smoothScroll(id) {
+    var target=document.getElementById(id)
+    var scrollContainer = target;
+    
+    do {
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do {
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
