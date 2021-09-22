@@ -34,12 +34,16 @@ function smoothScroll(id) {
         setTimeout(function(){ scroll(c, a, b, i); }, 10);
     }
     
+    if(id == "skills")
+    {
+        document.querySelectorAll('.skill').forEach(
+            function (x){
+                var porcentaje = x.dataset.porcentaje;
+                x.style.width = porcentaje + "%"
+            } 
+        )
+
+    }
+
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
-
-document.querySelectorAll('.skill').forEach(
-    function (x){
-        var porcentaje = x.dataset.porcentaje;
-        x.style.width = porcentaje + "%"
-    } 
-)
