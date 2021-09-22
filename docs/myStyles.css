@@ -8,57 +8,16 @@
     background: url(../src/presentacion.jpg) no-repeat center;
 }
 
-.skill{
+.skill-bar{
     width: 100%;
-    height: 4px;
+    height: 8px;
     background-color: rgba(156, 163, 175);
     position: relative
 }
-
-.csharp::before{
-    position: absolute;
-    content: "";
-    background-color: rgba(31, 41, 55);
-    width: 90%;
-    height: 4px;
-}
-
-.sql::before{
-    position: absolute;
-    content: "";
-    background-color: rgba(31, 41, 55);
-    width: 85%;
-    height: 4px;
-}
-
-.java::before{
-    position: absolute;
-    content: "";
-    background-color: rgba(31, 41, 55);
-    width: 80%;
-    height: 4px;
-}
-
-.js::before{
-    position: absolute;
-    content: "";
-    background-color: rgba(31, 41, 55);
-    width: 70%;
-    height: 4px;
-}
-
-.angular::before{
-    position: absolute;
-    content: "";
-    background-color: rgba(31, 41, 55);
-    width: 60%;
-    height: 4px;
-}
-
-.css::before{
-    position: absolute;
-    content: "";
-    background-color: rgba(31, 41, 55);
-    width: 50%;
-    height: 4px;
+.skill{
+    height: 8px;
+    background-color: rgb(54, 106, 197);
+    position: relative;
+    transition: 1s linear;
+    width: 0px;
 }
