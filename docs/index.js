@@ -47,3 +47,7 @@ function smoothScroll(id) {
 
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+function joda(){
+    alert("Nunca tomaria un cafe con alguien que piense lo contrario!")
+}
