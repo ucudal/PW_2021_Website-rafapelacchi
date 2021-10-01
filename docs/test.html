@@ -37,6 +37,7 @@
                 <li class="p-3 cursor-pointer rounded hover:bg-gray-400 "><a class="" href="#"></a>Experiencia Laboral</li>
                 <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('skills')">Skills</li>
                 <li class="p-3 cursor-pointer rounded hover:bg-gray-400 "><a class="" href="#"></a>Educacion</li>
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('contacto')">Contacto</li>
             </ul>
         </div>
 
@@ -62,7 +63,7 @@
 
         <!-- Menu Skills -->
         <section class="w-full p-0" id="skills">
-            <div class="p-52 pt-24">
+            <div class="p-52 pt-24 pb-20">
 
                 <div class="grid grid-cols-5">
                     <div class="bg-gray-800 h-3 w-full mt-2 col-span-2 rounded-lg"></div>
@@ -140,8 +141,44 @@
         <!-- Menu Educacion -->
         <section class="w-full p-0" id="educacion"></section>
 
+        <!-- Menu Contacto -->
+        <section class="w-full p-0 pb-32" id="contacto">
+            <div class="grid grid-cols-5 pb-4">
+                <div class="col-span-2"></div>
+                <div class="font-mono text-center text-3xl">
+                    Registrate para saber sobre mi
+                </div>
+                <div class="col-span-2"></div>
+            </div>
+            <div class="divForm" >
+                <form> 
+                    <label for="nombre">Nombre</label>
+                    <input class="inputForm" type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+                    <label for="apellido">Apellido</label>
+                    <input class="inputForm" type="text" id="apellido" name="apellido" placeholder="Apellido">
+                
+                    <label for="mail">Mail</label>
+                    <input class="inputForm" type="mail" id="mail" name="mail" placeholder="Mail">
+
+                    <label for="celular">Celular</label>
+                    <input class="inputForm" type="number" id="celular" name="celular" placeholder="Celular">
+                    
+                     <!-- Errores de Formulario -->
+                    <div>
+                        <ul id="erroresFormulario" class="text-red-400 pl-2">
+
+                        </ul>
+                    </div>
+
+                    <input class="inputForm bg-gray-800 font-extrabold text-white cursor-pointer" type="button" id="registrarUsuario" value="Registrar"> 
+                </form>
+            </div>
+        </section>
+
     </div>
 </body>
 </html>
 
 <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="formulario.js"></script>
