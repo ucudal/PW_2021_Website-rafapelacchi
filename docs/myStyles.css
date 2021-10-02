@@ -6,6 +6,28 @@
 /* Presentacion */
 #presentacion{
     background: url(../src/presentacion.jpg) no-repeat center;
+    transition: 14s;
+
+    animation-name: animacion;
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state:running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animacion{
+    70%{
+        background: url(../src/mac.jpeg) no-repeat center;
+    }
+}
+
+.textoPresentacion{ 
+    opacity: 50%;
+    color: white; 
+    padding: 30px;  
+    background-color: rgba(55, 65, 81, 1.3);
 }
 
 .skill-bar{
@@ -17,8 +39,7 @@
 .skill{
     height: 8px;
     background-color: rgb(54, 106, 197);
-    position: relative;
-    transition: 1s linear;
+    transition: 1s;
     width: 0px;
 }
 
