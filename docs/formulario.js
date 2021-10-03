@@ -9,6 +9,10 @@ class Usuario{
         this.valido = false;
     };
 
+    getName(){
+        return this.nombre;
+    }
+
     esValido(){
         if(!this.nombre)
             this.erroresValidacion.push("Usted no ha ingresado un nombre.");
@@ -43,6 +47,7 @@ class Usuario{
       {
         usuarios.push(usuarioAuxiliar);
         limpiarFormulario();
+        mostrarMensaje( usuarioAuxiliar.getName() + ": Nos contactaremos con usted!","success")
       }
       else
         mostrarErroresFormulario(usuarioAuxiliar);
