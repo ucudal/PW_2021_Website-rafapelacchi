@@ -24,8 +24,8 @@
 }
 
 .textoPresentacion{ 
-    opacity: 50%;
     color: white; 
+    opacity: 80%;
     padding: 30px;  
     background-color: rgba(55, 65, 81, 1.3);
 }

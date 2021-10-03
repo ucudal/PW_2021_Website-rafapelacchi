@@ -1,11 +1,10 @@
 var usuarios = [];
 
 class Usuario{
-    constructor(nombre, apellido, mail, celular) {
+    constructor(nombre, mail, comentario) {
         this.nombre = nombre;
-        this.apellido = apellido;
         this.mail = mail;
-        this.celular = celular;
+        this.comentario = comentario;
         this.erroresValidacion = [];
         this.valido = false;
     };
@@ -13,20 +12,15 @@ class Usuario{
     esValido(){
         if(!this.nombre)
             this.erroresValidacion.push("Usted no ha ingresado un nombre.");
-
-        if(!this.apellido)
-            this.erroresValidacion.push("Usted no ha ingresado un apellido.")
  
         if(!this.mail)
             this.erroresValidacion.push("Usted no ha ingresado un mail.")
         else if( this.mail.indexOf("@") < 0 || this.mail.indexOf(".") < 0)
             this.erroresValidacion.push("El mail ingresado no es correcto.")
 
-        if(!this.celular)
-            this.erroresValidacion.push("Usted no ha ingresado un celular.")
-        else if(this.celular.length != 9)
-            this.erroresValidacion.push("El celular ingresado no es correcto.")
-        
+        if(!this.comentario)
+            this.erroresValidacion.push("Usted no ha ingresado un comentario.")
+    
         this.valido = !(this.erroresValidacion.length > 0) 
 
         return this.valido;
@@ -38,11 +32,10 @@ class Usuario{
 
   function agregarUsuario(){
       let nombre = document.getElementById('nombre').value; 
-      let apellido = document.getElementById('apellido').value;
       let mail = document.getElementById('mail').value;
-      let celular = document.getElementById('celular').value;
+      let comentario = document.getElementById('comentario').value;
 
-      let usuarioAuxiliar = new Usuario(nombre,apellido,mail,celular);
+      let usuarioAuxiliar = new Usuario(nombre,mail,comentario);
 
       document.getElementById('erroresFormulario').textContent = '';
 
@@ -68,7 +61,6 @@ function mostrarErroresFormulario(user){
 
 function limpiarFormulario(){
     document.getElementById('nombre').value = ''; 
-    document.getElementById('apellido').value = ''; 
     document.getElementById('mail').value = ''; 
-    document.getElementById('celular').value = ''; 
+    document.getElementById('comentario').value = ''; 
 }
