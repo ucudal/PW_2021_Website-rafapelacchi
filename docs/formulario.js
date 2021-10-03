@@ -47,7 +47,7 @@ class Usuario{
       {
         usuarios.push(usuarioAuxiliar);
         limpiarFormulario();
-        mostrarMensaje( usuarioAuxiliar.getName() + ": Nos contactaremos con usted!","success")
+        mostrarMensaje( usuarioAuxiliar.getName() + ": A la brevedad con usted!","success")
       }
       else
         mostrarErroresFormulario(usuarioAuxiliar);
