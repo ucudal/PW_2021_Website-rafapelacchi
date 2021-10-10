@@ -39,30 +39,22 @@ class Usuario{
       let mail = document.getElementById('mail').value;
       let comentario = document.getElementById('comentario').value;
 
-      let usuarioAuxiliar = new Usuario(nombre,mail,comentario);
-
-      document.getElementById('erroresFormulario').textContent = '';
+      let usuarioAuxiliar = new Usuario(nombre,mail,comentario); 
 
       if(usuarioAuxiliar.esValido())
       {
         usuarios.push(usuarioAuxiliar);
         limpiarFormulario();
-        mostrarMensaje( usuarioAuxiliar.getName() + ": A la brevedad con usted!","success")
+        mostrarMensaje( usuarioAuxiliar.getName() + ": Me contactare a la brevedad!", "success")
       }
       else
-        mostrarErroresFormulario(usuarioAuxiliar);
+      {
+        usuarioAuxiliar.erroresValidacion.forEach(function(element){
+            mostrarMensaje(element, "error"); 
+        });
+      }
 
   }
-
-function mostrarErroresFormulario(user){
-    let contenedorErrores = document.getElementById('erroresFormulario');
- 
-    user.erroresValidacion.forEach(function(element){
-        let liAuxiliar = document.createElement('li');
-        liAuxiliar.textContent = element;
-        contenedorErrores.append(liAuxiliar);
-    });
-}
 
 function limpiarFormulario(){
     document.getElementById('nombre').value = ''; 

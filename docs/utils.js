@@ -17,7 +17,7 @@ function mostrarMensaje(strMensaje, typeMessage) {
         color = "8px solid rgba(220, 38, 38)";
     }
 
-    mensaje.style.paddingLeft = color;
+    mensaje.style.borderLeft = color;
     cantModals++;
     let modals = cantModals * 74;
     modal.style.paddingTop= modals + "px";
