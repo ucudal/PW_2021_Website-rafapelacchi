@@ -45,7 +45,13 @@ class Usuario{
       {
         usuarios.push(usuarioAuxiliar);
         limpiarFormulario();
-        mostrarMensaje( usuarioAuxiliar.getName() + ": Me contactare a la brevedad!", "success")
+
+        if(!mandoMail())
+             mostrarMensaje( usuarioAuxiliar.getName() + ": Me contactare a la brevedad!", "success")
+        else
+             mostrarMensaje( usuarioAuxiliar.getName() + ": Ya se han enviado " + (getCantMails() + 1) + ", me contactare a la brevedad!", "success")
+        
+         agregarRegistroMail();
       }
       else
       {

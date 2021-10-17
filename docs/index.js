@@ -49,5 +49,5 @@ function smoothScroll(id) {
 }
 
 function joda(){
-    alert("Nunca tomaria un cafe con alguien que piense lo contrario!")
+    mostrarMensaje("Nunca tomaria un cafe con usted si piensa lo contrario", "error") 
 }
