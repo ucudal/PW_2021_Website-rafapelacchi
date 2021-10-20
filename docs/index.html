@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"> 
-    <link rel="stylesheet" href="myStyles.css"> 
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.css">  
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+    <link rel="stylesheet" href="myStyles.css">
+    <link rel="stylesheet" href="utils.css">
     <title>Rafael Pelacchi</title> 
 </head>
 <body> 
-    <div class="relativs min-h-screen md:flex informacion">
+
+    <div>
+
         <!-- Menu Mobile -->
         <div class="bg-gray-800  text-gray-100 flex justify-between md:hidden">
             <div class="flex p-4">
@@ -26,86 +28,200 @@
                 </svg>
             </button>
         </div>
-    
-        <!-- Menu Web -->
-        <div id="navBar" class="bg-gray-800 w-64 space-y-6 py-7px-2 absolute inset-y-0 left-0 transform -translate-x-full transition duration-300 ease-in-out md:relative md:-translate-x-0"> 
-            <a href="#" class="flex text-white p-4 pb-0">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg> 
-                <label class="font-extrabold">Rafael Pelacchi</label>
-            </a>
-            <nav class="text-white p-4 pt-0">  
-                <a  href="index.html" class=" hover:bg-blue-200 py-2.5 rounded transition duration-300 flex" href="#">
-                    <svg class="w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                    </svg>
-                    <span>Presentacion</span>
-                </a> 
-                <a href="experiencia.html" class="flex hover:bg-blue-200 py-2.5 rounded transition duration-300" href="#">
-                    <svg class="w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                     </svg>
-                     <span>Experiencia Laboral</span> 
-                </a> 
-                <a href="skills.html" class="flex hover:bg-blue-200 py-2.5 rounded transition duration-300" href="#">
-                    <svg class="w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-                      </svg>
-                    <span>Skills</span> 
-                </a> 
-                <a href="educacion.html" class="flex hover:bg-blue-200 py-2.5 rounded transition duration-300" href="#">
-                    <svg class="w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"> 
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-                    </svg>
-                    <span>Educacion</span> 
-                </a> 
-                <a href="../src/doccurriculum.pdf" class="flex hover:bg-blue-200 py-2.5 rounded transition duration-300" href="#">
-                    <svg class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    <span>Descargar Curriculum</span> 
-                </a> 
-            </nav>
+
+        
+        <!-- Menu Browser -->
+        <div id="navBar" class="bg-gray-800 flex text-white items-center justify-between p-3 fixed w-full z-10">
+            <label class="font-extrabold pl-11">Rafael Pelacchi</label>
+            <ul class="flex justify-between">
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('presentacion')"><a class="" href="#" ></a>Presentacion</li>
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('experiencia')"><a class="" href="#"></a>Experiencia Laboral</li>
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('skills')">Skills</li>
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 "><a class="" href="#"></a>Educacion</li>
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('contacto')">Contacto</li>
+            </ul>
         </div>
 
-        <!-- Informacion -->
-        <div class="flex-1">
-            <h3 class="font-bold m-2"> Presentacion </h3> 
-    
-            <p class="m-2 prose"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-    
-            <p class="m-2"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p class="m-2">
-    
-            <p class="m-2"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p class="m-2">
-    
-            <p class="m-2"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-    
-            <p class="m-2"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-    
-            <p class="m-2"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p class="m-2">
-    
-            <p class="m-2"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p class="m-2">
-    
-            <p class="m-2"> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
-    </div> 
+        <!-- Menu Presentacion -->
+        <section class="w-full p-0 h-screen text-white justify-between flex pt-24 pl-16" id="presentacion"> 
+            <div id="contenedor" class="h-screen items-center justify-center pt-20">
+                <div class="font-mono  textoPresentacion rounded">
+                    <p class="max-w-xl">
+                        Soy estudiante de Ingenieria en Sistemas. Actualmente me encuentro cursando mi ultima materia de la carrera (Programacion Web). Soy lo que la explotacion laboral le termino llamando "Full Stack Developer", pero no les voy a mentir, uso bootstrap como loco y muchas veces no entiendo que hago realmente.
+                    </p>
+                    <p class="max-w-3xl pt-4">
+                        En mi tiempo libre me gusta organizar futbols que nunca llegan a concretarse, investigar sobre nuevas tecnologias y actualmente estoy apoyando a distintos emprendimientos. Estoy haciendole la pagina web a una compania de teatro, a un emprendimiento sobre la buena salud y a un consultorio odontologico. Mi gran objetivo en este curso es poder hacer las paginas yo y no tener usar FreeWebTemplates.com
+                    </p>
+                    <p class="max-w-3xl pt-4">
+                        Tengo un perro llamado Rocko, el cual tiene una facha tremenda, me gusta el surf, el boxeo y creo que Messi es el mejor jugador de la historia, si usted no esta de acuerdo, lo invito a tomar un cafe y debatir haciendo <span style="color: -webkit-link; cursor:pointer" onclick="joda()">click aqui</span>
+                    </p>
+                </div> 
+            </div>
+        </section>
+
+        <!-- Menu Experiencia Laboral -->
+        <section class="w-full p-0 h-screen pt-16" id="experiencia" style="background-color: gainsboro;">
+
+            <div class="grid grid-cols-7">
+                <div class="col-span-1 mt-96">
+                    <svg xmlns="http://www.w3.org/2000/svg"class="h-6 w-6 cursor-pointer" style="margin: auto;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round"  class="hidden" id="flechaAntes" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                      </svg>
+                </div>
+                <div class="col-span-5 mt-16">  
+                    <div id="datasec" class="bg-white p-16" style="display: none">
+                        <div class="text-center pb-7">
+                            <img class="object-contain p-3" style="width: 30%; height: 20%; margin: auto;" src="../src/datasec.png">
+                        </div>
+                        <div class="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost                       
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
+                        </div>
+                    </div>
+                    <div id="urudata" class=" bg-white p-16 rounded-md border-gray-300">
+                        <div class="text-center pb-7">
+                            <img class="object-contain p-3" style="width: 30%; height: 20%; margin: auto;" src="../src/urudata.png">
+                        </div>
+                        <div class="">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost                       
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 mt-96">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" style="margin: auto;" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round"  id="flechaSiguiente"  stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Menu Skills -->
+        <section class="w-full p-0 h-screen pt-16" style="background-color: #ebedde54;" id="skills">
+            <div class="p-52 pt-24 pb-20">
+
+                <div class="grid grid-cols-5">
+                    <div class="bg-gray-800 h-3 w-full mt-2 col-span-2 rounded-lg"></div>
+                    <div class="font-mono text-center text-3xl">
+                        Skills
+                    </div>
+                    <div class="bg-gray-800 h-3 w-full mt-2 col-span-2 rounded-lg"></div>
+                </div>
+                <div class="pt-6">
+                    <p class="font-mono">
+                        Trabajo sobre una aplicacion de automatizacion de procesos de negocio. Cuando un cliente quiere automatizar un nuevo proceso se contacta conmigo, hago el analisis de requerimientos y una vez que se valide comienzo con el desarrollo. Esto implica el modelado de la base de datos, la integracion de servicios externos, la logica de negocio y el front. Mi fuerte es C# y en cuanto a front uso Angular. 
+                    </p>
+                </div>
+                <div>
+                    <div class="pt-9">
+                        <div>
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>C#</span>
+                                <span>%90</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill csharp" data-porcentaje="90"></div> 
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>SQL Server</span>
+                                <span>%85</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill sql" data-porcentaje="85"></div> 
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>Java</span>
+                                <span>%80</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill java" data-porcentaje="80"></div> 
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>JavaScript</span>
+                                <span>%70</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill js" data-porcentaje="70"></div> 
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>Angular</span>
+                                <span>%60</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill angular" data-porcentaje="60"></div> 
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="flex w-full items-center justify-between p-2">
+                                <span>CSS</span>
+                                <span>%50</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill css" data-porcentaje="50"></div> 
+                            </div>
+                        </div>
+                    </div> 
+                  </div>
+            </div>
+        </section>
+
+        <!-- Menu Educacion -->
+        <section class="w-full p-0" id="educacion"></section>
+
+        <!-- Menu Contacto -->
+        <section class="w-full p-0 h-screen pt-24" id="contacto" style="background-color: gainsboro;">
+            <div class="grid grid-cols-5 pb-4">
+                <div class="col-span-1"></div>
+                <div class="font-mono text-center col-span-3 text-3xl">
+                    Dejame tu informacion y me contactare!
+                </div>
+                <div class="col-span-1"></div>
+            </div>
+            <div class="divForm" >
+                <form> 
+                    <label for="nombre">Nombre</label>
+                    <input class="inputForm" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                
+                    <label for="mail">Mail</label>
+                    <input class="inputForm" type="mail" id="mail" name="mail" placeholder="Mail">
+
+                    <label for="comentario">Comentario</label>
+                    <textarea class="inputForm" style="min-height: 100px;" id="comentario" name="comentario" placeholder="Comentario"></textarea>
+
+                    <input class="inputForm bg-gray-800 font-extrabold text-white cursor-pointer" type="button" id="registrarUsuario" value="Enviar"> 
+                </form>
+            </div>
+        </section>
+
+    </div>
 </body>
 </html>
+
+<script type="text/javascript" src="utils.js"></script>
+<script type="text/javascript" src="sesion.js"></script>
 <script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="formulario.js"></script>
+<script type="text/javascript" src="experiencia.js"></script>
