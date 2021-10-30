@@ -23,5 +23,22 @@ Al agregar un archivo js, se debe hacer en la carpeta src/js/. Una vez hecho est
 se debe agregar el caracter '&', seguido por el comando "npx uglify-js src/js/NOMBRE.js -o docs/NOMBRE.js".
 Luego se debe correr el comando "npm uglify" en la terminal. Esto creara un archivo con el mismo nombre, pero transformado para que nuestro codigo javascript no sea leible desde la consola.
 
+
+
+
 Descripcion
-Comence este proyecto con una 
+
+Etapa 1
+
+Comence este proyecto con un curriculum basado en varias paginas html y redireccionamiento:
+- index.html -> Ahora llamado index_old.html contenia la presentacion
+- experiencia.html
+- skills.html
+- educacion.html
+
+En este estilo de curriculum, logre cosas interesantes como un header 100% responsive que cuando llegaba a cierto tamano, desaparecia y funcionaba de con un boton. Esto era sumamente util si pensamos en abrir la pagina desde un dispositivo mobile.
+
+Etapa 2
+Cuando logre un diseno acorde o presentable, me vi un poco desmotivado con las redirecciones. Tambien me quede sin ideas para poder agregar. Comence un proceso de investigacion, que fue basicamente buscar en google "web portfolio examples". Aqui encontre varios ejemplos de diseno, que me ayudaron a investigar otras estructuras de la pagina, las cuales posteriormente en el curso hablamos (SPA).
+
+Si bien el diseno final fue el que mas me gusto, decidi dejar las paginas por si eran de interes.
