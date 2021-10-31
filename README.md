@@ -4,14 +4,14 @@
 Inicializacion de proyecto
 
 Instalacion
-   npm init  // Esto nos agregara los modulos de node necesarios.
-   npm i browser-sync  // Nos permitira iniciar nuestro proyecto y levantarlo en el localhost
-   npm install -D tailwindcss@latest postcss@latest autoprefixer@latest // Para utilizar estilos de Tailwind
-   npm install uglify-js // Sera necesario para poder deformar nuestro codigo js
+   - npm init  : Esto nos agregara los modulos de node necesarios.
+   - npm i browser-sync  : Nos permitira iniciar nuestro proyecto y levantarlo en el localhost
+   - npm install -D tailwindcss@latest postcss@latest autoprefixer@latest : Para utilizar estilos de Tailwind
+   - npm install uglify-js : Sera necesario para poder deformar nuestro codigo js
 
 
 Plugins
-Tailwind Css Intellisens // Recomendado para que nos muestre opciones de clases al escribirlas
+ - Tailwind Css Intellisens // Recomendado para que nos muestre opciones de clases al escribirlas
 
 Comandos de interez
 - npm start : Levanta el proyecto en el localhost.
