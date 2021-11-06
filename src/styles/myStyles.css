@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Presentacion */
+#presentacion{
+    background: url(../src/presentacion.jpg) no-repeat center;
+    transition: 14s;
+
+    animation-name: animacion;
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state:running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animacion{
+    70%{
+        background: url(../src/mac.jpeg) no-repeat center;
+    }
+}
+
+.textoPresentacion{ 
+    color: white; 
+    opacity: 80%;
+    padding: 30px;  
+    background-color: rgba(55, 65, 81, 1.3);
+}
+
+.skill-bar{
+    width: 100%;
+    height: 8px;
+    background-color: rgba(156, 163, 175);
+    position: relative
+}
+.skill{
+    height: 8px;
+    background-color: rgb(54, 106, 197);
+    transition: 1s;
+    width: 0px;
+}
+
+/* Formulario */
+.divForm {
+    border-radius: 5px;
+    padding: 20px;
+    width: 60%;
+    background-color: #f2f2f2;
+    margin: auto;
+  }
+
+
+.inputForm {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

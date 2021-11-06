@@ -7,7 +7,9 @@
     "start": "browser-sync start --server --serveStatic 'docs' --files '*/.html, */.css'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "uglify": "npx uglify-js src/js/index.js -o docs/index.js & npx uglify-js src/js/experiencia.js -o docs/experiencia.js & npx uglify-js src/js/formulario.js -o docs/formulario.js & npx uglify-js src/js/sesion.js -o docs/sesion.js & npx uglify-js src/js/utils.js -o docs/utils.js " ,
-    "dev": "node docs"
+    "dev": "node docs",
+    "tailwind": "npx tailwindcss -i ./src/styles/myStyles.css -o ./docs/style.css",
+    "tailwind:watch": "npm run tailwind -- --watch"
   },
   "repository": {
     "type": "git",
