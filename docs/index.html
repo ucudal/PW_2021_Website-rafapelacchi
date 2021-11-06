@@ -12,26 +12,8 @@
 <body> 
 
     <div>
-
-        <!-- Menu Mobile -->
-        <div class="bg-gray-800  text-gray-100 flex justify-between md:hidden">
-            <div class="flex p-4">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg> 
-                <label class="font-extrabold">Rafael Pelacchi</label>
-            </div> 
-
-            <button href="#" class="flex p-4 text-white font-bold focus:bg-gray-700" onclick="mostrarMenuMobile()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-
-        
         <!-- Menu Browser -->
-        <div id="navBar" class="bg-gray-800 flex text-white items-center justify-between p-3 fixed w-full z-10">
+        <div id="navBar" class="bg-gray-800 flex text-white items-center justify-between p-3 fixed w-full z-10" style="min-width: 800px;">
             <label class="font-extrabold pl-11">Rafael Pelacchi</label>
             <ul class="flex justify-between">
                 <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('presentacion')"><a class="" href="#" ></a>Presentacion</li>
@@ -48,7 +30,7 @@
             <div id="contenedor" class="h-screen items-center justify-center pt-20">
                 <div class="font-mono  textoPresentacion rounded">
                     <p class="max-w-xl">
-                        Soy estudiante de Ingenieria en Sistemas. Actualmente me encuentro cursando mi ultima materia de la carrera (Programacion Web). Soy lo que la explotacion laboral le termino llamando "Full Stack Developer", pero no les voy a mentir, uso bootstrap como loco y muchas veces no entiendo que hago realmente.
+                        Soy estudiante de Ingenieria en Sistemas. Actualmente me encuentro cursando mi ultima materia de la carrera (Programacion Web). Soy lo que la explotacion laboral le termino llamando "Full Stack Developer".
                     </p>
                     <p class="max-w-3xl pt-4">
                         En mi tiempo libre me gusta organizar futbols que nunca llegan a concretarse, investigar sobre nuevas tecnologias y actualmente estoy apoyando a distintos emprendimientos. Estoy haciendole la pagina web a una compania de teatro, a un emprendimiento sobre la buena salud y a un consultorio odontologico. Mi gran objetivo en este curso es poder hacer las paginas yo y no tener usar FreeWebTemplates.com
@@ -61,7 +43,7 @@
         </section>
 
         <!-- Menu Experiencia Laboral -->
-        <section class="w-full p-0 h-screen pt-16" id="experiencia" style="background-color: gainsboro;">
+        <section class="w-full p-0 pt-16" id="experiencia" style="background-color: gainsboro; height: 900px;">
 
             <div class="grid grid-cols-7">
                 <div class="col-span-1 mt-96">
@@ -81,9 +63,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost                       
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
                         </div>
                     </div>
                     <div id="urudata" class=" bg-white p-16 rounded-md border-gray-300">
@@ -97,9 +77,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost                       
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, or incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.
                         </div>
                     </div>
                 </div>
@@ -113,8 +91,8 @@
         </section>
 
         <!-- Menu Skills -->
-        <section class="w-full p-0 h-screen pt-16" style="background-color: #f9f9f554;" id="skills">
-            <div class="p-52 pt-24 pb-20">
+        <section class="w-full p-0 pt-16" style="background-color: #f9f9f554; height: 900px;" id="skills">
+            <div class="p-32 pt-10 pb-20">
 
                 <div class="grid grid-cols-5">
                     <div class="bg-gray-800 h-3 w-full mt-2 col-span-2 rounded-lg"></div>
@@ -190,8 +168,8 @@
         </section>
 
         <!-- Menu Educacion --> 
-        <section class="w-full p-0 h-screen pt-16" id="educacion" style="background-color: gainsboro;">
-            <div class="pt-24"></div>
+        <section class="w-full p-0 pt-16" id="educacion" style="background-color: gainsboro; height: 900px;">
+            <div class="pt-10"></div>
             <div class="grid grid-cols-5 pb-4">
                 <div class="col-span-1"></div>
                 <div class="font-mono text-center col-span-3 text-3xl">
@@ -234,7 +212,7 @@
         </section>
 
         <!-- Menu Contacto -->
-        <section class="w-full p-0 h-screen pt-24" id="contacto"  style="background-color: #f9f9f554;">
+        <section class="w-full p-0 pt-16" id="contacto"  style="background-color: #f9f9f554; height: 900px;">
             <div class="grid grid-cols-5 pb-4">
                 <div class="col-span-1"></div>
                 <div class="font-mono text-center col-span-3 text-3xl">
