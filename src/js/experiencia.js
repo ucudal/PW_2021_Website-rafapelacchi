@@ -7,6 +7,9 @@ var experienciaActual= "urudata";
 flechaSiguiente.addEventListener("click", cambiarExperiencia)
 flechaAntes.addEventListener("click", cambiarExperiencia) 
 
+var aprobarMateria = document.getElementById('aprobarMateria');
+aprobarMateria.addEventListener("click", aprobarCurso)
+
 function cambiarExperiencia(){
     switch(experienciaActual) 
     {
@@ -29,3 +32,14 @@ function cambiarExperiencia(){
     }
 }
 
+function aprobarCurso(){
+    
+    mostrarMensaje( "Gracias!", "success");
+    mostrarMensaje( "Gracias!", "success");
+    mostrarMensaje( "Gracias!", "success");
+    mostrarMensaje( "Gracias!", "success");
+    mostrarMensaje( "Gracias!", "success");
+
+    var tercerRegla = document.getElementById('tercerRegla');
+    tercerRegla.style.display = "block";
+}

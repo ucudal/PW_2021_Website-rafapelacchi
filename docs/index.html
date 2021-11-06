@@ -37,7 +37,7 @@
                 <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('presentacion')"><a class="" href="#" ></a>Presentacion</li>
                 <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('experiencia')"><a class="" href="#"></a>Experiencia Laboral</li>
                 <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('skills')">Skills</li>
-                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 "><a class="" href="#"></a>Educacion</li>
+                <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('educacion')">Educacion</li>
                 <li class="p-3 cursor-pointer rounded hover:bg-gray-400 " onclick="smoothScroll('contacto')">Contacto</li>
                 <li class="p-3 cursor-pointer rounded hover:bg-gray-400 "><a class="" href="index_old.html">PaginaOld</a></li>
             </ul>
@@ -113,7 +113,7 @@
         </section>
 
         <!-- Menu Skills -->
-        <section class="w-full p-0 h-screen pt-16" style="background-color: #ebedde54;" id="skills">
+        <section class="w-full p-0 h-screen pt-16" style="background-color: #f9f9f554;" id="skills">
             <div class="p-52 pt-24 pb-20">
 
                 <div class="grid grid-cols-5">
@@ -189,11 +189,52 @@
             </div>
         </section>
 
-        <!-- Menu Educacion -->
-        <section class="w-full p-0" id="educacion"></section>
+        <!-- Menu Educacion --> 
+        <section class="w-full p-0 h-screen pt-16" id="educacion" style="background-color: gainsboro;">
+            <div class="pt-24"></div>
+            <div class="grid grid-cols-5 pb-4">
+                <div class="col-span-1"></div>
+                <div class="font-mono text-center col-span-3 text-3xl">
+                    Educacion
+                </div>
+                <div class="col-span-1"></div>
+            </div>
+
+            <div class="grid grid-cols-7">
+                <div class="col-span-1 mt-96">
+                </div>
+                <div class="col-span-5 mt-16">  
+                    <div id="datasec" class="bg-white p-16">
+                        <div class="pb-7">
+                            Mi dato de color, es que esta es la ultima materia que me queda para recibirme de ingeniero en sistemas (si, con esto busco que los profesores se solidaricen). Si usted presiona el boton de abajo pasaran 2 cosas. <br>
+                            <ul>
+                                <li class="pt-4">
+                                    <h3 class="font-bold">1) Mail a mi empresa</h3>
+                                    <p>Se enviara un mail a mi empresa, informando que ya me gradue. Esto es sumamente necesario para que puedan ir gestionando el aumento en mi sueldo.</p>
+                                </li>
+                                <li class="pt-4">
+                                    <h3 class="font-bold">2) Mail a la oficina de titulacion </h3>
+                                    <p>Se enviara un mail a la oficina de titulacion para que arranquen a gestionar el titulo y ahorrar tiempos para poder facturar como profesional, esto es meramente papeleo irrelevante.</p>
+                                </li>
+                                <li class="pt-4" style="display: none;" id="tercerRegla">
+                                    <h3 class="font-bold">3) Me ire de este zoom </h3>
+                                    <p>Tengo una cerveza en el congelador, si apretas el boton no tiene sentido que la siga postergando. </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <input class="inputForm bg-gray-800 font-extrabold text-white cursor-pointer" type="button" id="aprobarMateria" value="Dale que siiiii"> 
+                    </div>
+                </div>
+                <div class="col-span-1 mt-96">
+
+                </div>
+
+            </div>
+
+        </section>
 
         <!-- Menu Contacto -->
-        <section class="w-full p-0 h-screen pt-24" id="contacto" style="background-color: gainsboro;">
+        <section class="w-full p-0 h-screen pt-24" id="contacto"  style="background-color: #f9f9f554;">
             <div class="grid grid-cols-5 pb-4">
                 <div class="col-span-1"></div>
                 <div class="font-mono text-center col-span-3 text-3xl">
