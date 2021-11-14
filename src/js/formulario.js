@@ -52,6 +52,8 @@ class Usuario{
              mostrarMensaje( usuarioAuxiliar.getName() + ": Ya se han enviado " + (getCantMails() + 1) + ", me contactare a la brevedad!", "success")
         
          agregarRegistroMail();
+
+         registrarCookie(usuarioAuxiliar.getName());
       }
       else
       {

@@ -20,3 +20,12 @@ var experiencia_laboral = [
 for(var i = 0; i < experiencia_laboral.length; i++){
   agregarExperiencia(experiencia_laboral[i])
 }
+
+function registrarCookie(usuario){
+    var mensaje = "";
+
+    if(!mensaje){
+      mostrarMensaje( mensaje, "error");
+    }
+    
+}
