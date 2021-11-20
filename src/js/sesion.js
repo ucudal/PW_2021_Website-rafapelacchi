@@ -1,10 +1,31 @@
 
-var accedeAnteriormente = "";
-var mensaje = "";
+fetch('http://localhost:3002/obtener').then((res) => { 
+  return res.json(); 
+}).then((json) =>  {
+    var accedeAnteriormente = json.nombre;
 
-if(accedeAnteriormente)
-    mensaje = accedeAnteriormente + ", es un gusto tenerlo nuevamente.";
-else
-    mensaje = "Bienvenido a mi pagina web!";
+    var mensaje = "";
 
-mostrarMensaje(mensaje, "success");
+    if(accedeAnteriormente)
+        mensaje = accedeAnteriormente + ", es un gusto tenerlo nuevamente.";
+    else
+        mensaje = "Bienvenido a mi pagina web!";
+    
+    mostrarMensaje(mensaje, "success");
+})
+
+
+
+
+var user = {
+    nombre:'TESTING',
+    mail:'rasdfas@sdfsd.com'
+};
+ 
+fetch("https://PW2021-APINode-rafapelacchi.rp33.repl.co/enviar-formulario", {
+    method: "POST",
+    body: JSON.stringify(user),
+    headers: {'Content-Type': 'application/json'}
+}).then(function (response) {
+    console.log(response);
+})

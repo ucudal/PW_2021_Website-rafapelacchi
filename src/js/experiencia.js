@@ -48,7 +48,7 @@ function aprobarCurso(){
 var aprobarMateria = document.getElementById('aprobarMateria');
 aprobarMateria.addEventListener("click", aprobarCurso)
 
-function agregarExperiencia(aux){
+function agregarExperiencia(aux, i){
 
 var contenedorExperiencia = document.getElementById("contenedorExperiencia");
 
@@ -66,7 +66,7 @@ var contenedorExperiencia = document.getElementById("contenedorExperiencia");
 
   var divFecha = document.createElement("div");
   divFecha.className="text-center pb-7 text-gray-400";
-  divFecha.textContent =  "( " + aux.fechaInicio.getDay() + "/"+ aux.fechaInicio.getMonth()+ "/"+ aux.fechaInicio.getFullYear() + " - "+ aux.fechaFin.getDay() + "/"+ aux.fechaFin.getMonth()+ "/"+ aux.fechaFin.getFullYear() + " )";
+  divFecha.textContent =  "( " + new Date(aux.fechaInicio).getDay() + "/"+ new Date(aux.fechaInicio).getMonth()+ "/"+ new Date(aux.fechaInicio).getFullYear() + " - "+ new Date(aux.fechaFin).getDay() + "/"+ new Date(aux.fechaFin).getMonth()+ "/"+ new Date(aux.fechaFin).getFullYear() + " )";
 
   var body = document.createElement("div");
   body.textContent = aux.descripcion;
