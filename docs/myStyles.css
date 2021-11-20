@@ -6,7 +6,7 @@
 /* Presentacion */
 
 #presentacion{
-  background: url(./src/presentacion.jpg) no-repeat center;
+  background: url(../src/presentacion.jpg) no-repeat center;
   transition: 14s;
   -webkit-animation-name: animacion;
           animation-name: animacion;
@@ -25,13 +25,13 @@
 
 @-webkit-keyframes animacion{
   70%{
-    background: url(./src/mac.jpeg) no-repeat center;
+    background: url(../src/mac.jpeg) no-repeat center;
   }
 }
 
 @keyframes animacion{
   70%{
-    background: url(./src/mac.jpeg) no-repeat center;
+    background: url(../src/mac.jpeg) no-repeat center;
   }
 }
 
