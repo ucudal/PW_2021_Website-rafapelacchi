@@ -1,5 +1,5 @@
 
-fetch('http://localhost:3002/obtener').then((res) => { 
+fetch('https://PW2021-APINode-rafapelacchi.rp33.repl.co/obtener').then((res) => { 
   return res.json(); 
 }).then((json) =>  {
     var accedeAnteriormente = json.nombre;
