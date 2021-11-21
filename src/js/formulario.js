@@ -30,11 +30,9 @@ class Usuario{
         return this.valido;
     }
   } 
-
-  var boton = document.getElementById('registrarUsuario')
-  boton.addEventListener('click', agregarUsuario)
-
-  function agregarUsuario(){
+ 
+  document.getElementById('registrarUsuario').addEventListener("click", function (event) {
+    event.preventDefault();
       let nombre = document.getElementById('nombre').value; 
       let mail = document.getElementById('mail').value;
       let comentario = document.getElementById('comentario').value;
@@ -44,16 +42,8 @@ class Usuario{
       if(usuarioAuxiliar.esValido())
       {
         usuarios.push(usuarioAuxiliar);
-        limpiarFormulario();
-
-        if(!mandoMail())
-             mostrarMensaje( usuarioAuxiliar.getName() + ": Me contactare a la brevedad!", "success")
-        else
-             mostrarMensaje( usuarioAuxiliar.getName() + ": Ya se han enviado " + (getCantMails() + 1) + ", me contactare a la brevedad!", "success")
-        
-         agregarRegistroMail();
-
-         registrarCookie(usuarioAuxiliar.getName());
+        limpiarFormulario()
+        generarCookie(usuarioAuxiliar)
       }
       else
       {
@@ -62,7 +52,7 @@ class Usuario{
         });
       }
 
-  }
+  })
 
 function limpiarFormulario(){
     document.getElementById('nombre').value = ''; 
