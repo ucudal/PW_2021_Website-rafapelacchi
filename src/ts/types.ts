@@ -44,7 +44,7 @@ function impactarFormulario(nombre: string, mail: string, comentario: string) {
 
 function impactarUsuario(usuario : User){
     var user = {
-        nombre: usuario.nombre,
+        nombreContacto: usuario.nombre,
         mail: usuario.mail
     };
     var url = "https://PW2021-APINode-rafapelacchi.rp33.repl.co/enviar-formulario";
@@ -56,7 +56,7 @@ function impactarUsuario(usuario : User){
             cache: 'no-store',
             'Content-Type': 'application/json'
         }
-    }).then(function (response) { 
+    }).then(function (response) {  
         if(response.status == 303)
              mostrarMensaje(response.text.toString(), "error");
         else
